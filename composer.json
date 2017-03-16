@@ -1,0 +1,35 @@
+{
+    "name": "tasksuki/message",
+    "type": "library",
+    "description": "Tasksuki Message Component",
+    "keywords": ["message", "tasksuki"],
+    "homepage": "https://tasksuki.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aurimas Niekis",
+            "email": "aurimas@niekis.lt"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": { "Tasksuki\\Component\\Message\\": "src" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Tasksuki\\Component\\Message\\Test\\": "tests" }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-ci": "vendor/bin/phpunit -c phpunit.xml.ci"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
